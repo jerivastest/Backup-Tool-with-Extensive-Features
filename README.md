@@ -1,7 +1,6 @@
 # Backup-Tool-with-Extensive-Features
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+Is it true that a description added here will show up somewhere?
 
 ## Development
 
