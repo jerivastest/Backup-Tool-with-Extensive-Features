@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.58.0'
+project:
+    name: Backup-Tool-with-Extensive-Features
+    package:
+        name: Backup-Tool-with-Extensive-Features
+        api_version: '54.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Backup-Tool-with-Extensive-Features/tests
+            options:
+                outputdir: robot/Backup-Tool-with-Extensive-Features/results
+
+    robot_testdoc:
+        options:
+            path: robot/Backup-Tool-with-Extensive-Features/tests
+            output: robot/Backup-Tool-with-Extensive-Features/doc/Backup-Tool-with-Extensive-Features_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
